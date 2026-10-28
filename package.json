@@ -1,0 +1,16 @@
+{
+"name": "delivery-baiano-e7",
+"version": "1.0.0",
+"description": "Sistema de delivery de comida baiana",
+"main": "index.js",
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
+"keywords": [
+    "delivery",
+    "comida-baiana",
+    "nodejs"
+],
+"author": "",
+"license": "ISC"
+}
