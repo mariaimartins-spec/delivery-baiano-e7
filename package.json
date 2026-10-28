@@ -1,16 +1,1 @@
-{
-"name": "delivery-baiano-e7",
-"version": "1.0.0",
-"description": "Sistema de delivery de comida baiana",
-"main": "index.js",
-"scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-},
-"keywords": [
-    "delivery",
-    "comida-baiana",
-    "nodejs"
-],
-"author": "",
-"license": "ISC"
-}
+{"name":"delivery-baiano-e7","version":"1.0.0","description":"Sistema de delivery de comida baiana","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"keywords":["delivery","comida-baiana","nodejs"],"author":"","license":"ISC","repository":{"type":"git","url":"git+https://github.com/mariaimartins-spec/delivery-baiano-e7.git"},"type":"commonjs","bugs":{"url":"https://github.com/mariaimartins-spec/delivery-baiano-e7/issues"},"homepage":"https://github.com/mariaimartins-spec/delivery-baiano-e7#readme"}
