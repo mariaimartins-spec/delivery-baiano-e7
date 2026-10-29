@@ -3,8 +3,8 @@
 Equipe: E7
 Data: 27/10/2026
 Quem digitou: (Maria Paula)
-Quem registrou: (Kaylane)
-Quem revisou o pull request: (Maria Izabel)
+Quem registrou: (Maria Izabel)
+Quem revisou o pull request: (Kaylane)
 
 ## O pedido do bugs.js
 
