@@ -10,4 +10,4 @@ pedido, a cozinha atualiza o status e a administradora cuida do cardápio.
 ## Como rodar
 Precisa do Node.js 26. Ainda não há código: o projeto começa na Sprint 1.
 ## Situação
-Sprint 1 - Cardápio no ar. Scrum Master: (nome)
+Sprint 1 - Cardápio no ar. Scrum Master: (Maria Izabel)
