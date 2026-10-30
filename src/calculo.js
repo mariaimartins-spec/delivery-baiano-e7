@@ -7,3 +7,7 @@ const qtdAbara = 1;
 const qtdCocada = 1;
 const subtotal = PRECO_ACARAJE * qtdAcaraje + PRECO_ABARA * qtdAbara + PRECO_COCADA * qtdCocada;
 console.log(`Itens: ${reais.format(subtotal / 100)}`);
+const TAXA_ENTREGA = 600;
+const total = subtotal + TAXA_ENTREGA;
+console.log(`Taxa: ${reais.format(TAXA_ENTREGA / 100)}`);
+console.log(`Total: ${reais.format(total / 100)}`);
