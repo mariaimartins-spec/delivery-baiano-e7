@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido - Delivery Dona Ju</title>
+</head>
+<body>
+    <h1>Fazer pedido</h1>
+
+<form action="/pedidos" method="post">
+<fieldset>
+    <legend>Seus dados</legend>
+    <p>
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" required>
+    </p>
+    <p>
+    <label for="telefone">Telefone com DDD (só números)</label>
+    <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" required>
+    </p>
+</fieldset>
+
+<fieldset>
+    <legend>Entrega</legend>
+    <p>
+    <label for="bairro">Bairro</label>
+    <select id="bairro" name="bairro" required>
+        <option value="">Escolha o bairro</option>
+        <option value="rio-vermelho">Rio Vermelho (taxa R$ 5,00)</option>
+        <option value="barra">Barra (taxa R$ 6,00)</option>
+        <option value="pituba">Pituba (taxa R$ 7,00)</option>
+        <option value="itapua">Itapuã (taxa R$ 9,00)</option>
+    </select>
+    </p>
+    <p>
+    <label for="endereco">Endereço (rua, número e complemento)</label>
+    <textarea id="endereco" name="endereco" rows="2" required></textarea>
+    </p>
+</fieldset>
+
+<!-- itens e pagamento: integrante 3 -->
+
+<button type="submit">Enviar pedido</button>
+</form>
+</body>
+</html>
