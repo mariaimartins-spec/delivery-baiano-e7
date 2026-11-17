@@ -1,4 +1,4 @@
-const { CARDAPIO, buscarProduto, listarAtivos } = require("./dados/cardapio.js");
+import { CARDAPIO, buscarProduto, listarAtivos } from "./dados/cardapio.js";
 
 console.log("Testando o cardápio...");
 console.assert(CARDAPIO.length >= 6, "o cardápio tem pelo menos 6 produtos");

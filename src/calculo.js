@@ -1,6 +1,6 @@
 
-const regras = require("./regras.js");
-const { buscarProduto } = require("./dados/cardapio.js");
+import * as regras from "./regras.js";
+import { buscarProduto } from "./dados/cardapio.js";
 
 const reais = new Intl.NumberFormat("pt-BR", {
   style: "currency",

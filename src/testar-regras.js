@@ -1,7 +1,7 @@
 // src/testar-regras.js - confere as regras do regras.js
 // Rodar na pasta do repositório: node src/testar-regras.js
 // console.assert fica quieto quando a regra acerta e avisa quando erra.
-const regras = require("./regras.js");
+import * as regras from "./regras.js";
 
 console.log("Testando as regras...");
 

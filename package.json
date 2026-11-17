@@ -19,7 +19,7 @@
         "type": "git",
         "url": "git+https://github.com/mariaimartins-spec/delivery-baiano-e7.git"
     },
-    "type": "commonjs",
+    "type": "module",
     "bugs": {
         "url": "https://github.com/mariaimartins-spec/delivery-baiano-e7/issues"
     },
