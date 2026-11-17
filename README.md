@@ -44,4 +44,4 @@ Sprint 1 - Cardápio no ar. Scrum Master: Maria Izabel.
 
 ## npm audit
 
-Pendente: executar após o merge do Passo 7.
+Executado em 17/11/2026: found 0 vulnerabilities.
