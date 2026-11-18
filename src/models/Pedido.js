@@ -42,7 +42,20 @@ class Pedido {
       throw new Error("abaixo do mínimo de R$ 30,00 em itens");
     }
   }
-
+// Transforma o pedido em um objeto simples para salvar no arquivo
+paraObjeto() {
+    return {
+        bairro: this.bairro,
+        hora: this.hora,
+        itens: this.#itens.map((item) => ({
+            id: item.produto.id,
+            nome: item.produto.nome,
+            qtd: item.qtd,
+            precoUnitario: item.precoUnitario,
+        })),
+        total: this.total(),
+    };
+}
   // Total: itens, menos o desconto, mais a taxa. Valida antes.
   total() {
     this.validar();
