@@ -2,6 +2,7 @@
 // Valida estoque e pedido mínimo, e calcula o total com as regras do regras.js.
 import * as regras from "../regras.js";
 import ItemPedido from "./ItemPedido.js";
+import { ErroValidacao } from "../erros.js";
 
 class Pedido {
   #itens = [];
@@ -16,7 +17,7 @@ class Pedido {
 
   adicionarItem(produto, qtd) {
     if (!produto.temEstoque(qtd)) {
-      throw new Error(`${produto.nome}: sem estoque para ${qtd}`);
+      throw new ErroValidacao(`${produto.nome}: sem estoque para ${qtd}`);
     }
     this.#itens.push(new ItemPedido(produto, qtd));
   }
@@ -33,13 +34,13 @@ class Pedido {
   // Lança um erro com o motivo, se o pedido não pode seguir
   validar() {
     if (regras.calcularTaxa(this.bairro) === 0) {
-      throw new Error(`não entregamos em ${this.bairro}`);
+      throw  new ErroValidacao(`não entregamos em ${this.bairro}`);
     }
     if (!regras.dentroDoHorario(this.hora)) {
-      throw new Error("pedidos só das 11h às 22h");
+      throw new ErroValidacao("pedidos só das 11h às 22h");
     }
     if (this.subtotal() < regras.PEDIDO_MINIMO) {
-      throw new Error("abaixo do mínimo de R$ 30,00 em itens");
+      throw new ErroValidacao("abaixo do mínimo de R$ 30,00 em itens");
     }
   }
 // Transforma o pedido em um objeto simples para salvar no arquivo
