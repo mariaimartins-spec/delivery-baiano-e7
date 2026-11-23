@@ -25,12 +25,21 @@ export async function buscarPorId(id) {
 }
 
 // Dá o próximo id, grava a lista inteira e devolve o pedido com o id
+
 export async function salvar(dados) {
   const pedidos = await listar();
   const maiorId = pedidos.reduce((maior, pedido) => Math.max(maior, pedido.id), 0);
-  const novo = { id: maiorId + 1, ...dados };
-  pedidos.push(novo);
+
+  const novo = {
+    id: maiorId + 1,
+    criadoEm: new Date().toISOString(),
+    status: "recebido",
+    ...dados,
+  };
+
   await mkdir(PASTA, { recursive: true });
+  pedidos.push(novo);
   await writeFile(ARQUIVO, JSON.stringify(pedidos, null, 2), "utf-8");
+
   return novo;
 }
