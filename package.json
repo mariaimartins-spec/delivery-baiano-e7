@@ -4,10 +4,11 @@
     "description": "Sistema de delivery de comida baiana",
     "main": "src/demo-pedido.js",
     "scripts": {
-        "start": "node src/demo-pedido.js",
-        "dev": "node --watch src/demo-pedido.js",
-        "test": "node src/testar-regras.js && node src/testar-cardapio.js"
-    },
+  "start": "node src/demo-pedido.js",
+  "dev": "node --watch src/demo-pedido.js",
+  "test": "node src/testar-regras.js && node src/testar-cardapio.js",
+  "api": "node --watch src/server.js"
+},
     "keywords": [
         "delivery",
         "comida-baiana",
@@ -25,6 +26,7 @@
     },
     "homepage": "https://github.com/mariaimartins-spec/delivery-baiano-e7#readme",
     "dependencies": {
-        "dayjs": "^1.11.23"
+        "dayjs": "^1.11.23",
+        "express": "^5.3.0"
     }
 }
